@@ -2,7 +2,7 @@ import dotenv from "dotenv"
 dotenv.config()
 import express from "express"
 import mongoose from "mongoose"
-import { router } from "./src/routes/auth_routes.js"
+import { router } from "./src/routes/user_routes.js"
 
 const app = express();
 const port = 3000;
