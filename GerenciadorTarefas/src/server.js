@@ -8,7 +8,7 @@ const PORT = process.env.PORT;
 
 (async () => {
   try {
-    await connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/mvc_api');
+    await connect(process.env.MONGODB_URI);
     app.listen(PORT, () => console.log(`API ouvindo em http://localhost:${PORT}`));
   } catch (error) {
     console.error('Erro ao conectar no banco ou iniciar o servidor', error);
